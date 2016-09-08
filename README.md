@@ -1,5 +1,4 @@
-# mcperf-benchmark
-##Result of mcperf benchmark for XAP 10 and Amazon Elastic Cache
+# mcperf benchmark for XAP 10 and Amazon Elastic Cache
 
 The following link shows the results from mcperf (https://github.com/twitter/twemperf) for comparing the memcached API performance of XAP and Amazon ElastiCache.
 
