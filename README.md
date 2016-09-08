@@ -11,9 +11,9 @@ The payload size for each call was 5K. For each connection, 100000 calls were ma
 
 The XAP instance was run with the JVM heap size set to 6 GB. An Amazon _m3.large_ instance was used for hosting the XAP installation.
 
-The AWS Elastic Cache had the condfiguration _cache.m3.large_ which corresponds to a 6.05 GB size.
+The AWS Elastic Cache had the configuration _cache.m3.large_ which corresponds to a 6.05 GB size.
 
-The following operations were tested for the Memcached API provided by XAP and AWS ElastiCache:
+The following operations were tested for **throughput** for the Memcached API provided by XAP and AWS ElastiCache:
 
 - set
 - get
@@ -24,6 +24,8 @@ The following operations were tested for the Memcached API provided by XAP and A
 - prepend
 - incr
 - decr
+
+The test scripts were run on an Amazon AWS m4.2xlarge instance which has 8 vCPUs. This enables true parallel execution with GNU parallel when testing for 1, 2, 4 and 8 connections.
 
 ## Test Script
 
