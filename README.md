@@ -9,6 +9,10 @@ The charts are in tabs 1-connection, 2-connections, 4-connections and 8-connecti
 
 The payload size for each call was 5K. For each connection, 100000 calls were made. Parallel connections were handled by using the GNU parallel utility (https://www.gnu.org/software/parallel/).
 
+The XAP instance was run with the JVM heap size set to 6 GB. An Amazon _m3.large_ instance was used for hosting the XAP installation.
+
+The AWS Elastic Cache had the condfiguration _cache.m3.large_ which corresponds to a 6.05 GB size.
+
 The script (**mcperftest.sh**) used for testing is as follows:
 
         runmcperf() {
