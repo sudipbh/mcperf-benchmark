@@ -13,6 +13,20 @@ The XAP instance was run with the JVM heap size set to 6 GB. An Amazon _m3.large
 
 The AWS Elastic Cache had the condfiguration _cache.m3.large_ which corresponds to a 6.05 GB size.
 
+The following operations were tested for the Memcached API provided by XAP and AWS ElastiCache:
+
+- set
+- get
+- cas
+- add
+- replace
+- append
+- prepend
+- incr
+- decr
+
+
+
 The script (**mcperftest.sh**) used for testing is as follows:
 
         runmcperf() {
