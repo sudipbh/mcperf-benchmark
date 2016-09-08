@@ -27,6 +27,22 @@ The following operations were tested for **throughput** for the Memcached API pr
 
 The test scripts were run on an Amazon AWS m4.2xlarge instance which has 8 vCPUs. This enables true parallel execution with GNU parallel when testing for 1, 2, 4 and 8 connections.
 
+## Test environment set up for XAP
+
+The benchmark script expects GNU parallel to be present. GNU parallel can be downloaded using the link http://ftp.gnu.org/gnu/parallel/parallel-latest.tar.bz2.
+
+GNU parallel can be built and installed in /usr/local/bin with the following commands:
+
+    $ configure ; make ; make install
+
+XAP can be started in the usual way:
+
+    $ gs-agent.sh
+
+Memcached can be started using the following command:
+
+    $ gs-memcached.sh
+
 ## Test Script
 
 The script (**mcperftest.sh**) used for testing is as follows:
